@@ -1,4 +1,4 @@
-                                             Hamming Code Error Correction System
+                                               Hamming Code Error Correction System
 
 
 This project implements a complete Hamming Code-based error correction system in SystemVerilog, designed to handle and correct single-bit errors during data transmission. The project utilizes Hamming Code for error correction in data transmission. The system starts with a 4-bit input data value, which is encoded into a 7-bit Hamming code by adding 3 parity bits using the hc_enc module. These parity bits are computed with XOR operations on specific combinations of the input bits: C0 = I0 XOR I1 XOR I3, C1 = I0 XOR I2 XOR I3, and C2 = I1 XOR I2 XOR I3. This encoded 7-bit data is then ready for transmission.
